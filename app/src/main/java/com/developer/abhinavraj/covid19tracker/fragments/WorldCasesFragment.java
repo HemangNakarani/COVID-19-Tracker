@@ -27,6 +27,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -115,8 +116,7 @@ public class WorldCasesFragment extends Fragment {
                                 totalDeaths,newCases,newDeaths,seriouslyCritical,totalCasesPerMillion));
 
                     }
-
-
+                    Collections.sort(mCountryList);
                     Log.d("jObject", String.valueOf(jsonArray.length()));
                 } else {
                     System.out.println("POST NOT WORKED");

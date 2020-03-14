@@ -1,6 +1,6 @@
 package com.developer.abhinavraj.covid19tracker.model;
 
-public class Country {
+public class Country implements Comparable {
 
     private String countryName;
     private int activeCases;
@@ -95,5 +95,11 @@ public class Country {
 
     public void setTotalRecovered(int totalRecovered) {
         this.totalRecovered = totalRecovered;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        int compareTotalCases = ((Country) o).getTotalCases();
+        return compareTotalCases-this.totalCases;
     }
 }
