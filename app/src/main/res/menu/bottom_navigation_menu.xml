@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/globe"
+        android:title="@string/world_stats" />
+    <item
+        android:id="@+id/navigation_sms"
+        android:icon="@drawable/ic_individual"
+        android:title="@string/individual" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_update"
+        android:title="@string/updates" />
+</menu>
